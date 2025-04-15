@@ -1,0 +1,18 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+
+@{
+    Layout = null;
+    Layout = "../shared/_layout2.cshtml";
+}
+
+<form method="post">
+
+    <input type="text" name="admin_name" value="@Model.editedadmin.admin_name">
+    <input type="text" name="admin_email" value="@Model.editedadmin.admin_email">
+    <input type="text" name="admin_password" value="@Model.editedadmin.admin_password">
+
+    <input type="submit"  value="edited"/>
+</form>
+
+

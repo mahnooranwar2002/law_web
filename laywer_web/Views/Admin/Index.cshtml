@@ -1,0 +1,128 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+
+@if (TempData["pictureError"] != null)
+{
+
+    <div class="alert alert-danger" role="alert">
+
+        <h4 style="text-align:center;">  @TempData["pictureError"]</h4>
+    </div>
+}
+@if (TempData["laywerdetails"]!=null)
+{
+    <div class="alert alert-success" role="alert">
+
+        <h4 style="text-align:center;"> @TempData["laywerdetails"]</h4>
+    </div>
+}
+
+@if (TempData["errormsg"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+
+        <h4 style="text-align:center;"> @TempData["errormsg"]</h4>
+    </div>
+}
+<style>
+    .myunderline {
+        height: 5px;
+        background-color: #ff5821;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+</style>
+
+<main>
+    <div class="container">
+
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col  flex-column align-items-center justify-content-center">
+
+             
+              <!-- End Logo -->
+
+              <div class="card mb-3">
+
+                  
+                <div class="card-body">
+                               
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4" style="color:black">Add The Lawyer</h5>
+
+                    <p class="text-center small">Enter Lawyer personal details to create account</p>
+                  </div>
+                  <div class="myunderline"></div>
+                  <form method="post" class="row g-3 needs-validation"  autocomplete="off" enctype="multipart/form-data">
+                    <div class="col-12">
+                      <label for="yourName" class="form-label">Lawyer Name</label>
+                       <input type="text" name="lawyer_name" class="form-control" id="yourName" required>
+                      <div class="invalid-feedback">Please, enter your name!</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourEmail" class="form-label">lawyer Email</label>
+                         <input type="text" name="lawyer_email" class="form-control" id="yourEmail" required>
+                      <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                    </div>
+
+                      <div class="col-12">
+                          <label for="yourEmail" class="form-label">lawyer Number</label>
+                           <input type="text" name="lawyer_Number" class="form-control" id="yourEmail" required>
+                              <div class="invalid-feedback">please enter valid number</div>
+                        </div>
+
+                          <div class="col-12">
+                                  <label for="yourEmail" class="form-label">lawyer dealed with</label>
+                                        <input type="text" name="lawyer_dealed" required class="form-control" id="yourEmail">
+                                 <div class="invalid-feedback">A lawyer may contribute in the folloeing</div>
+                                    </div>
+                             <div class="col-12">
+                                  <label for="yourEmail" class="form-label">lawyer picture</label>
+                           <input type="file" name="Lawyer_image" class="form-control" id="yourEmail" required>
+                                      <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">lawyer dis</label>
+                                        <textarea name="lawyer_dis" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                    <div class="col-12">
+                      <label for="yourPassword" class="form-label"> lawyer Password</label>
+                      <input type="password" name="lawyer_password" class="form-control" id="yourPassword" required>
+                      <div class="invalid-feedback">Please enter your password!</div>
+                    </div>
+
+                    @* <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                        <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
+                        <div class="invalid-feedback">You must agree before submitting.</div>
+                      </div>
+                    </div> *@
+                    <div class="col-12">
+                      <input  class="btn btn-primary w-100" type="submit" value="Add laywer">
+                    </div>
+                
+                  </form>
+
+                </div>
+              </div>
+
+          
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>

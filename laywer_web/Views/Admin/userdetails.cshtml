@@ -1,0 +1,82 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+    
+
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+<style>
+    .myunderline {
+        height: 5px;
+        background-color: #ff5821;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+
+    <main>
+        <form action="" class="form_data" autocomplete="off" style=" display: flex;
+    padding-top: 20px;
+    justify-items: center;
+    justify-content: center;">
+            <input type="text" placeholder="search by name or email ...." name="search_text" style="  border: none;
+        width: 50%;
+        margin: 10px;
+        border-radius: 1px;
+        border: 2px solid grey;
+        padding: 5px;
+">
+            <input type="submit" value="search" style="  border: none;
+        width: 15%;
+        margin: 10px;
+        border-radius: 1px;
+        border: 2px solid grey;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;">
+        </form>
+
+    <div class="card" style="padding:10px;">
+        <div class="card-body">
+            <h3 class="card-title" style="color:black">user Data Table</h3>
+            <div class="myunderline"></div>
+   <div style="display:flex; justify-content:center; justify-items:center; flex-wrap:wrap">
+            @foreach (var userdata in Model.user_detail)
+        {
+            <div class="card" style="width: 18rem; margin:10px;">
+                <div class="card-body">
+                    <h5 class="card-title">User Details</h5>
+                    <p class="card-text">User Id : @userdata.user_id</p>
+                <p class="card-text">User Name : @userdata.user_name</p>
+                <p class="card-text">User Email : @userdata.user_email</p>
+                    <p class="card-text">User Paswword : @userdata.user_password</p>
+                            <p class="card-text">Status : @userdata.updatedstatus</p>
+                            <button class="btn btn-secondary" style="width:100%;">
+                        <a href="@Url.Action("statuseuser","admin",new{id=userdata.user_id})" style="color:white;">status</a>
+                        </button>
+                            <button class="btn btn-danger" style="width:100%;">
+                                <a href="@Url.Action("deleteuser","admin",new{id=userdata.user_id})" style="color:white;">Delete</a>
+                            </button>
+                    <button class="btn btn-primary" style="width:100%; margin-top:3px;">
+                        <a href="@Url.Action("edituser","admin",new{id=userdata.user_id})" style="color:white;">edit_user</a>
+                    </button>
+                       
+
+                </div>
+            </div>
+        }
+    </div>
+
+            @if (TempData["usererror"] != null)
+            {
+                {
+                    <p style="text-align:center;color:red">@TempData["usererror"]</p>
+                }
+            }
+        </div>
+    </div>
+    
+
+</main>

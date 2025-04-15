@@ -1,0 +1,105 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+
+
+
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+
+<style>
+    .myunderline {
+        height: 5px;
+        background-color: #ff5821;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+
+
+<main>
+    <form action="" class="form_data" autocomplete="off" style=" display: flex;
+    padding-top: 20px;
+    justify-items: center;
+    justify-content: center;">
+        <input type="text" placeholder="search by user name or lawyer name...." name="search_text" style="  border: none;
+        width: 50%;
+        margin: 10px;
+        border-radius: 1px;
+        border: 2px solid grey;
+        padding: 5px;
+">
+        <input type="submit" value="search" style="  border: none;
+        width: 15%;
+        margin: 10px;
+        border-radius: 1px;
+        border: 2px solid grey;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;">
+    </form>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title" style="color:black">Lawyer Data Table</h5>
+            <div class="myunderline"></div>
+            <!-- Dark Table -->
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        
+                        <th scope="col"> Lawyer Name</th>
+                        <th scope="col">user Name</th>
+                        <th scope="col">User Email</th>
+                        <th scope="col">user number</th>
+                        <th scope="col">Actions</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var getappoiment in Model.get_appoiment)
+                    {
+                        <tr>
+
+                            <td>@getappoiment.lawyer_name</td>
+                            <td>@getappoiment.Booked_username</td>
+                            <td>@getappoiment.Booked_useremail</td>
+                            <td>@getappoiment.Booked_usernumber</td>
+
+                            <td><button class="btn btn-danger">
+                                <a style="color:white" href="@Url.Action("delete_appointments","admin",new{id=getappoiment.Booked_id})">
+                                    Delete</a>
+                                    </button>
+                                    </td>
+
+                        </tr>
+                    }
+
+
+
+
+                </tbody>
+            </table>
+            <!-- End Dark Table -->
+            @if (@TempData["error"] != null)
+            {
+                <p style="text-align:center;color:red">@TempData["error"]</p>
+            }
+        </div>
+    </div>
+</main>
+
+
+
+
+@* @foreach (var lawyerdata in Model)
+{
+<h3>id : @lawyerdata.lawyer_id</h3>
+<h5>@lawyerdata.lawyer_name</h5>
+} *@
+
+
+

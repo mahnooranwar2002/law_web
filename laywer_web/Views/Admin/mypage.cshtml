@@ -1,0 +1,148 @@
+﻿@model laywer_web.Models.lawyerViewModel
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+
+
+
+@* <main >
+    <div class="card">
+        <div class="card-body " style="height:80vh;">
+            <h5 class="card-title">DASH BOARD</h5>
+
+            <div style="display:flex; justify-content:center; justify-items:center; flex-wrap:wrap">
+                <div class="card" style="width: 25em; margin:10px; height:150px">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i  class="bi bi-person-fill-gear"></i> ADMIN</h4>
+                    
+                        <h5 class="card-text" style="text-align:center">@ViewBag.admin</h5>
+                </div>
+            </div>
+                <div class="card" style="width: 25em; margin:10px;">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i  class=" bi bi-briefcase-fill"></i>LAWYERS</h4>
+                        <h5 class="card-text" style="text-align:center">@ViewBag.lawyer</h5>
+                </div>
+            </div>
+                <div class="card" style="width: 25em; margin:10px;">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i class="bi bi-person-circle"></i>USER</h4>
+                        <h5 class="card-text" style="text-align:center">@ViewBag.user</h5>
+                </div>
+                </div>
+
+                <div class="card" style="width: 25em; margin:10px;height:150px">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i  class="bi bi-telephone"></i>CONTACT</h4>
+                            <h5 class="card-text" style="text-align:center">@ViewBag.contact</h5>
+                        </div>
+                    </div>
+
+                <div class="card" style="width: 25em; margin:10px;height:150px">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i  class="bi bi-calendar-check-fill"></i>Appointments</h4>
+                        <h5 class="card-text" style="text-align:center">@ViewBag.appoitment</h5>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div/>
+
+
+
+  
+</main> *@
+<style>
+    
+
+    .myicon {
+        font-size: 2rem;
+        color: white;
+        margin: 8px;
+    }
+
+    .mycardbox {
+        border: #ff5821 5px solid;
+        background-color: #ff5821;
+    }
+
+        .mycardbox h5 {
+            color: white;
+        }
+
+        .mycardbox h4 {
+            color: white;
+        }
+
+        .mycardbox:hover {
+            box-shadow: 4px 4px 10px grey;
+        }
+</style>
+<main>
+    <div class="card">
+        <div class="card-body " style="height:80vh;">
+           
+
+            <div style=" display:flex; justify-content:center; justify-items:center; flex-wrap:wrap">
+                <div class="card mycardbox" style="width: 25em; margin:10px; height:200px">
+
+                    <div class="card-body" style="text-align:center">
+                        <i class="ri-user-settings-line myicon"></i> 
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em">
+                            Admin
+                        </h4>
+
+                        <h5 class="card-text" style="text-align:center">@ViewBag.admin</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 25em; margin:10px;">
+
+                    <div class="card-body mycardbox" style="text-align:center ">
+                        <i class="ri-briefcase-line myicon"></i>
+
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em">
+                            Lawyers
+                        </h4>
+                        <h5 class="card-text" style="text-align:center">@ViewBag.lawyer</h5>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 0%; display:flex; justify-content:center; justify-items:center; flex-wrap:wrap">
+                <div class="card mycardbox" style="width: 25em; margin:10px; height:200px">
+
+                    <div class="card-body" style="text-align:center">
+                        <i class="ri-user-heart-line myicon"></i>
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em">
+                            User
+                        </h4>
+
+                        <h5 class="card-text" style="text-align:center">@ViewBag.user</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 25em; margin:10px;">
+
+                    <div class="card-body mycardbox" style="text-align:center ">
+                        <i class="ri-calendar-check-line myicon"></i>
+
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em">
+                            Appointment
+                        </h4>
+                        <h5 class="card-text" style="text-align:center">@ViewBag.appoitment</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+</main>

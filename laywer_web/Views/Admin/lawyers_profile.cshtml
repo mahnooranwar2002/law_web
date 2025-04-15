@@ -1,0 +1,90 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+<style>
+    .mybox {
+        width: 500px;
+        height: 300px;
+    }
+
+    .mypicture {
+        width: 250px;
+        height: 250px;
+        background-color: gray;
+        margin-left: 40%;
+        border-radius: 50%;
+        margin-top: 30px;
+        object-fit: contain;
+    }
+
+    .my img {
+        border-radius: 50%;
+    }
+</style>
+<main>
+
+    
+    <div class="card" style="height:auto">
+        <div class="card-body">
+            <h5 class="card-title">Lawyer Profile</h5>
+
+            <div class="container" style="margin-bottom:15px;">
+                <h3 class="text-uppercase">@Model.lawyersdetail.lawyer_name</h3>
+                <div style="width:100%;height:3px;background-color:lightslategrey; margin-bottom:5px;margin-top:5px"></div>
+            </div>
+            <div class="myunderline"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col my">
+                        <div class="main">
+                            <div class="row">
+                                <div class="col mybox">
+                                    <div class="mypicture">
+                                        <img src="@Url.Content("~/userimages/"+ Model.lawyersdetail.Lawyer_image)" alt="" width="100%" height="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+        
+            <br>
+             <div class="container" >
+                <h5> <b>Email</b>  : @Model.lawyersdetail.lawyer_email </h5>
+                <br>
+                <h5><b>Phone</b> : @Model.lawyersdetail.lawyer_Number </h5>
+                <br>
+             </div>
+
+            <div class="container" >
+                
+                <h5><b>services</b> : @Model.lawyersdetail.lawyer_dealed </h5>
+                <br>
+                <h5><b>password</b> : @Model.lawyersdetail.lawyer_password </h5>
+            </div>
+            <br>
+            <div class="container" >
+                <h5><b>Dispriction</b>:  </h5>
+                <br>
+                <p>@Model.lawyersdetail.lawyer_dis</p>
+            </div>
+            
+        </div>
+        <button type="button" class="btn btn-secondary" style="margin:5px">
+            <a style="color:white" href="@Url.Action("lawyerdetails","admin")">
+
+                Back to List
+
+            </a>
+        </button>
+    </div>
+        </div>
+    </div>
+
+</main>
+
+

@@ -1,0 +1,229 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = laywer_web
+build_property.RootNamespace = laywer_web
+build_property.ProjectDir = C:\Users\Mahnoor Anwar\Desktop\mahnoor projects\Apteach\Apteach\HDSE 1\Dot Net\laywer_web\laywer_web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Mahnoor Anwar\Desktop\mahnoor projects\Apteach\Apteach\HDSE 1\Dot Net\laywer_web\laywer_web
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/addcities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRkY2l0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/addCountries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRkQ291bnRyaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/admineddited.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRtaW5lZGRpdGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/adminlogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRtaW5sb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/adminProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRtaW5Qcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/appointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/contactdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cY29udGFjdGRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cY29udGFjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/countriesDropDown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cY291bnRyaWVzRHJvcERvd24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/dropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZHJvcGRvd24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/editAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZWRpdEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/edited_admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZWRpdGVkX2FkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/editlawyers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZWRpdGxhd3llcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/edituser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZWRpdHVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/lawyerdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbGF3eWVyZGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/lawyers_profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbGF3eWVyc19wcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/myadminedit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbXlhZG1pbmVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/mypage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbXlwYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/updateCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXBkYXRlQ291bnRyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/userdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXNlcmRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/viewCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdmlld0NpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Admin/viewCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdmlld0NvdW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxibG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/blogchild.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxibG9nY2hpbGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/get_appoint.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxnZXRfYXBwb2ludC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/lawyer_profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsYXd5ZXJfcHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/laywersdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsYXl3ZXJzZGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/logineduser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbmVkdXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/service.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/user_login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1c2VyX2xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/user_profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1c2VyX3Byb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/user_register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1c2VyX3JlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/view_appoint.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx2aWV3X2FwcG9pbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/waitedPag.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx3YWl0ZWRQYWcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Home/waitedPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx3YWl0ZWRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Lawyers/appoitmentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF3eWVyc1xhcHBvaXRtZW50RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Lawyers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF3eWVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Lawyers/lawyerProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF3eWVyc1xsYXd5ZXJQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/Lawyers/loginfrom_lawyer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF3eWVyc1xsb2dpbmZyb21fbGF3eWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/shared/lawyer_dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2hhcmVkXGxhd3llcl9kYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/shared/_Layout3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2hhcmVkXF9MYXlvdXQzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mahnoor Anwar/Desktop/mahnoor projects/Apteach/Apteach/HDSE 1/Dot Net/laywer_web/laywer_web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

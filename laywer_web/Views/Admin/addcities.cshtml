@@ -1,0 +1,90 @@
+﻿
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+@* <form method="post" >
+    <input type="text" name="admin_id" value="@Model.editedadmin.admin_id" readonly />
+    <input type="text" value="@Model.editedadmin.admin_name" name="admin_name">
+    <input type="text" value="@Model.editedadmin.admin_email" name="admin_email">
+    <input type="text" value="@Model.editedadmin.admin_password" name="admin_password">
+    <input type="submit" value="save">
+
+</form> *@
+@model laywer_web.Models.lawyerViewModel
+
+
+
+<!-- Render the dropdown using the partial view -->
+
+
+<main>
+    <div class="container">
+
+        <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col  flex-column align-items-center justify-content-center">
+
+
+                        <!-- End Logo -->
+
+                        <div class="card mb-3">
+
+
+                            <div class="card-body">
+
+                                <div class="pt-4 pb-2">
+                                    <h5 class="card-title text-center pb-0 fs-4">Add city</h5>
+                                
+                                </div>
+
+                                <form method="post" class="row g-3 needs-validation" autocomplete="off" enctype="multipart/form-data">
+                                
+
+                                    <div class="col-12">
+                                        <label for="yourEmail" class="form-label">City Name</label>
+                                        <input type="text" class="form-control" name="city_name"  id="yourPassword" />                                       <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <label for="yourEmail" class="form-label">Select Your Country</label>
+                                                                        
+                                    </div>
+
+
+
+                                    <select name="coun_id" class="form-control"  id="yourPassword">
+                                        <option hidden>select your country</option>
+                                        @foreach (var Mycounrties in Model.countriesName)
+                                        {
+                                            <option value="@Mycounrties.country_id">@Mycounrties.country_name</option>
+                                        }
+                                    </select>
+
+                                
+
+
+                                    
+                                        
+                                    <div class="col-12">
+                                        <input class="btn btn-primary w-100" type="submit" value="add city">
+                                    </div>
+                                        <div class="col-12">
+                                 
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</main>

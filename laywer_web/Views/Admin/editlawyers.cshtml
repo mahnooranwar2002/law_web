@@ -1,0 +1,154 @@
+﻿@model laywer_web.Models.lawyerViewModel
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+<style>
+    .myunderline {
+        height: 5px;
+        background-color: #ff5821;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+@* <form method="post">
+    <input type="text" name="lawyer_id" value="@Model.lawyer_id" readonly/>
+    <input type="text" name="lawyer_name" value="@Model.lawyer_name"  />
+    <input type="text" name="lawyer_email" value="@Model.lawyer_email"/>
+     <input type="text" name="lawyer_password" value="@Model.lawyer_password" />
+    <input type="submit" value="Edit Record" />
+    
+</form> *@
+<style>
+    .mybox {
+        width: 500px;
+        height: 300px;
+    }
+
+    .mypicture {
+        width: 250px;
+        height: 250px;
+        background-color: gray;
+        margin-left: 40%;
+        border-radius: 50%;
+        margin-top: 30px;
+        object-fit: contain;
+    }
+
+    .my img {
+        border-radius: 50%;
+    }
+</style>
+
+<main>
+    <div class="container">
+
+        <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col  flex-column align-items-center justify-content-center">
+
+
+                        <!-- End Logo -->
+
+                        <div class="card mb-3">
+
+
+                            <div class="card-body">
+
+                                <div class="pt-4 pb-2">
+                                    <h5 class="card-title text-center pb-0 fs-4" style="color:black;">Edit The Lawyer</h5>
+                                    <p class="text-center small">Enter Lawyer personal details to edit account</p>
+                                </div>
+                                <div class="myunderline"></div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col my">
+                                            <div class="main">
+                 <div class="row">
+                                                    <div class="col mybox">
+                                                        <div class="mypicture">
+                                                            <img src="@Url.Content("~/userimages/"+ Model.lawyersdetail.Lawyer_image)" alt="" width="100%" height="100%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <form asp-action="lawyerpicupdate" asp-controller="admin" method="post" enctype="multipart/form-data">
+
+                                                    <input type="hidden" name="lawyer_id" value="@Model.lawyersdetail.lawyer_id" readonly />
+                                                    <input type="hidden" name="lawyer_name" value="@Model.lawyersdetail.lawyer_name" />
+                                                    <input type="hidden" name="lawyer_email" value="@Model.lawyersdetail.lawyer_email" />
+                                                    <input type="hidden" name="lawyer_password" value="@Model.lawyersdetail.lawyer_password" />
+                                                    <input type="hidden" name="lawyer_dis" value="@Model.lawyersdetail.lawyer_dis" />
+                                                    <input type="hidden" name="lawyer_dealed" value="@Model.lawyersdetail.lawyer_dealed" />
+                                                    <input type="file" name="Lawyer_image" value="@Model.lawyersdetail.Lawyer_image" required/>
+
+                                                    <button type="submit" class="btn btn-primary">update Picture</button>
+
+                                                </form>
+                                <form method="post" class="row g-3 needs-validation" autocomplete="off" enctype="multipart/form-data">
+                                    <div class="col-12">
+                                        
+                                        <input type="hidden" class="form-control" name="lawyer_id" value="@Model.lawyersdetail.lawyer_id" readonly id="yourPassword" />                                       <div class="invalid-feedback">Please, enter your name!</div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="yourEmail" class="form-label">lawyer Name</label>
+                                        <input type="text" class="form-control" name="lawyer_name" value="@Model.lawyersdetail.lawyer_name" id="yourPassword" />                                       <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                                    </div>
+
+
+
+                                    <div class="col-12">
+                                        <label for="yourPassword" class="form-label">Lawyer Email</label>
+                                        <input type="text" class="form-control" name="lawyer_email" value="@Model.lawyersdetail.lawyer_email" id="yourPassword" />                                        <div class="invalid-feedback">Please enter your password!</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="yourPassword" class="form-label">Lawyer dealing with</label>
+                                        <input type="text" class="form-control" name="lawyer_dealed" value="@Model.lawyersdetail.lawyer_dealed" id="yourPassword" />                                        <div class="invalid-feedback">Please enter your password!</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="yourPassword" class="form-label">lawyer Number</label>
+                                        <input type="text" class="form-control" name="lawyer_Number" value="@Model.lawyersdetail.lawyer_Number" id="yourPassword" />                                        <div class="invalid-feedback">Please enter your password!</div>
+                                    </div>
+
+                                                    <input type="hidden" class="form-control" name="Lawyer_image" value="@Model.lawyersdetail.Lawyer_image" id="yourPassword" />                                        <div class="invalid-feedback">Please enter your password!</div>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlTextarea1">lawyer Discription</label>
+                                                        <textarea name="lawyer_dis" class="form-control" id="exampleFormControlTextarea1" rows="3">@Model.lawyersdetail.lawyer_dis</textarea>
+                                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="yourPassword" class="form-label">Lawyer Password</label>
+                                        <input type="text" class="form-control" name="lawyer_password" value="@Model.lawyersdetail.lawyer_password" id="yourPassword" />                                        <div class="invalid-feedback">Please enter your password!</div>
+                                    </div>
+                                    @* <div class="col-12">
+                                    <div class="form-check">
+                                    <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                                    <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
+                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                                    </div>
+                                    </div> *@
+                                    <div class="col-12">
+                                        <input class="btn btn-primary w-100" type="submit" value="Edit laywer">
+                                    </div>
+                                    @* <div class="col-12">
+                                    <p class="small mb-0">Already have an account? <a href="pages-login.html">Log in</a></p>
+                                    </div> *@
+                                </form>
+
+                            </div>
+                        </div>
+                        </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</main>

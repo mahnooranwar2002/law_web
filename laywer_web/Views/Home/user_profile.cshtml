@@ -1,0 +1,77 @@
+﻿@model laywer_web.Models.lawyerViewModel
+@{
+    Layout = "../shared/_layout.cshtml";
+}
+
+<style>
+    .main {
+        margin-top: 20px;
+        height: 450px;
+        width: 100%;
+    }
+
+        .main h2 {
+            text-align: center;
+            padding-top: 40px;
+        }
+
+    .boxcol {
+        background-color: #ff5821;
+        height: 4px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .my {
+        width: 100%;
+        height: 450px;
+    }
+
+    .form {
+        padding: 30px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .mybuttonsss {
+        border: none;
+        width: 100%;
+        height: 40px;
+        background-color: #ff5821;
+        color: white;
+    }
+
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col my">
+            <div class="main">
+                <h2>User Profile</h2>
+                <div class="boxcol"></div>
+                <div class="form">
+                    <form action="" method="post">
+                        <input value="@Model.user_data.user_id" name="user_id" type="hidden">
+                        <input value="@Model.user_data.status" name="status" type="hidden">
+                        <input value="@Model.user_data.updatedstatus" name="updatedstatus" type="hidden">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input value="@Model.user_data.user_name" type="text" name="user_name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input value="@Model.user_data.user_email" type="email" name="user_email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+                            <input type="text" value="@Model.user_data.user_password" name="user_password" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <button type="submit" class="mybuttonsss">
+                            Update
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

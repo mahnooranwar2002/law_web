@@ -1,0 +1,69 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+@if (TempData["msg"]!=null){
+    <div class="alert alert-success" role="alert">
+        <p style="text-align:center; color:white">@TempData["msg"]</p>
+    </div>
+}
+<main>
+
+    
+      <div class="container" style="display: flex; justify-content: center; justify-items: center;">
+        <div class="row">
+            <div class="col">
+                <form method="post"  style="width: 600px;">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Lawyer name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" readonly name="lawyer_name" value="@Model.lawyersdetail.lawyer_name">
+
+                    </div>
+
+                    <input hidden type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" readonly name="lawyer_id" value="@Model.lawyersdetail.lawyer_id">
+
+                    
+                    
+                       @foreach (var item in Model.user_detail)
+                        {
+                            <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Client Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" 
+                            aria-describedby="emailHelp" readonly 
+                            name="Booked_username" value="@item.user_name" >
+
+                       
+                       
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Client Email</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" 
+                        aria-describedby="emailHelp" readonly name="Booked_useremail" value="@item.user_email" required>
+
+                    </div>
+                        }
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Client Number</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               name="Booked_usernumber" required>
+                        <br />
+                        <label for="exampleInputEmail1" class="form-label">Select Slot</label>
+                        <fieldset >
+                            <input required type="radio" name="slot_time" id="time-slot-1" value="9 - 12">
+                            <label for="time-slot-1">9:30PM to 12:30AM</label>
+                            <br />
+                            <input type="radio" name="slot_time" id="time-slot-2" value="1:30 - 3:00">
+                            <label for="time-slot-2">1:30PM to 3:30AM</label>
+                           <br/>
+                            <input type="radio" name="slot_time" id="time-slot-2" value="4:30 - 6:00">
+                            <label for="time-slot-2">4:30PM to 6:00AM</label>
+                        </fieldset>
+                        <br />
+                        </div>
+
+                        <input type="submit" class="btn btn-success" value="get Apppointment" style="width: 100%;">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\laywer_web.props" />
+</Project>

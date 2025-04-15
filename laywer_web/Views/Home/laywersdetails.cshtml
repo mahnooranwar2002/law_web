@@ -1,0 +1,70 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+
+
+    <main style="box-shadow:4px 8px 10px black">
+   
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+                <form action="" class="form_data" autocomplete="off" style=" display: flex;
+    padding-top: 20px;
+    justify-items: center;
+    justify-content: center;">
+                    <input type="text" placeholder="search by name or dealing with...." name="search_text" style="  border: none;
+        width: 50%;
+        margin: 10px;
+        border-radius: 1px;
+        border: 2px solid grey;
+        padding: 5px;
+">
+                    <input type="submit" value="search" style="  border: none;
+        width: 15%;
+        margin: 10px;
+        border-radius: 1px;
+        border: 2px solid grey;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;">
+                </form>
+             
+              <table class="table">
+          <thead >
+              <tr style="color:white">
+                  <th scope="col">Lawyer Name</th>
+                  <th scope="col">Service</th>
+                            <th scope="col">Phone Number</th>
+
+                  <th scope="col">View Profile</th>
+                  <th scope="col">Get Appoiment</th>
+              </tr>
+          </thead>
+          <tbody>
+                        @foreach (var lawyerData in Model.lawyersdetails)
+              {
+                  <tr>
+                                <th scope="col">@lawyerData.lawyer_name</th>
+                                <th scope="col">@lawyerData.lawyer_dealed</th>
+                                <th scope="col">@lawyerData.lawyer_Number</th>
+
+                                <th scope="col"> <button class="btn btn-info"><a style="color:white;" href="@Url.Action("lawyer_profile","home",new{id=lawyerData.lawyer_id})">view Profile</a></button> </th>
+                                <th scope="col"><button class="btn btn-secondary"><a style="color:white;" href="@Url.Action("get_appoint","home",new{id=lawyerData.lawyer_id})">Get Appointment</a></button> </th>
+                  </tr>
+              }          
+              
+          </tbody>
+                  
+      </table>
+       @if (@TempData["error"] != null)
+                {
+                    <p style="text-align:center;color:red">@TempData["error"]</p>
+                }
+            </div>
+    
+</div>
+  </div>
+
+
+    </main>

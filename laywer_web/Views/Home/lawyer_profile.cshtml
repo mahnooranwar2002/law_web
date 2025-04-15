@@ -1,0 +1,46 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col" style="display: flex;justify-content: center;justify-items: center;">
+                <div class="card mb-3" style="width:800px; padding:50px" >
+                        <div class="row g-0">
+                            
+                               
+                                <div class="col-md-4">
+
+                                <img style="margin-top:150px" src="@Url.Content("~/userimages/"+Model.lawyersdetail.Lawyer_image)" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body" >
+                                <h2 class="card-title" style="text-align:center; color: #ff5821 ">Lawyer Details</h2>
+                                <h5 class="card-title" style="text-align:center; ">@Model.lawyersdetail.lawyer_name</h5>
+                                <p class="card-text" style="text-align:center;">Email: @Model.lawyersdetail.lawyer_email</p>
+
+                                <p class="card-text" style="text-align:center;">Number:@Model.lawyersdetail.lawyer_Number</p>
+                                <p class="card-text" style="text-align:center;">Service:@Model.lawyersdetail.lawyer_dealed</p>
+                                <h4>About me</h4>
+                                <p class="card-text" style="text-align:justify;">@Model.lawyersdetail.lawyer_dis</p>
+                                </div>
+                                <button class="btn btn-success" width="50%">
+                                <a style="color:white" href="@Url.Action("get_appoint","home",new{id=Model.lawyersdetail.lawyer_id})">
+                                    Get appointment
+
+                                </a>
+                                </button>
+                            <button class="btn btn-warning"> <a style="color:black" href="@Url.Action("laywersdetails","home")"> back to list</a></button>
+
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+          </div>
+
+    </main>

@@ -1,0 +1,136 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+
+
+
+@{
+    Layout = "../shared/lawyer_dashboard.cshtml";
+}
+    <style >
+    .myunderline {
+        height: 5px;
+        background-color: #ff5821;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+
+@if (TempData["editedlawyermassage"] != null)
+{
+
+    <div class="alert alert-success" role="alert">
+
+        <h4 style="text-align:center;">  @TempData["editedlawyermassage"]</h4>
+    </div>
+}
+
+<main>
+    <form action="" class="form_data" autocomplete="off" style=" display: flex;
+    padding-top: 20px;
+    justify-items: center;
+    justify-content: center;">
+        <input type="text" placeholder="search by name or email" name="search_text" style="  border: none;
+        width: 50%;
+        margin: 10px;
+        border-radius: 1px;
+        border: 2px solid grey;
+        padding: 5px;
+">
+        <input type="submit" value="search" style="  border: none;
+        width: 15%;
+        margin: 10px;
+        border-radius: 1px;
+        border: 2px solid grey;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;">
+    </form>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title" style="color:black">Lawyer Data Table</h5>
+            <div class="myunderline"></div>
+            <!-- Dark Table -->
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                      
+                        <th scope="col">BookedUser Name</th>
+                        <th scope="col">BookedUser Email</th>
+                        <th scope="col">BookedUser Number</th>
+
+                        <th scope="col">Time Slot</th>
+                      <th scope="col">status</th>
+
+                        <th scope="col"> Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var bookeduser in Model.get_appointments)
+                    {
+                        <tr>
+
+                            
+                            <td>@bookeduser.Booked_username</td>
+                            <td>@bookeduser.Booked_useremail</td>
+                            <td>@bookeduser.Booked_usernumber</td>
+                          
+                            
+                            <td>@bookeduser.slot_time</td>
+                            <td>
+                                @bookeduser.status_updates
+                            <td>
+                      
+                                @*                             <td>
+
+                        <img src="@Url.Content("~/userimages/" + lawyer_data.Lawyer_image)" alt="Lawyer Image" />
+                        </td> *@
+
+                         
+                            
+
+                            
+                                <button type="button" class="btn btn-danger" style="margin:5px">
+                                    <a style="color:white" href="@Url.Action("delete_appoitment","lawyers",new{id=bookeduser.Booked_id})">
+                                        Delete
+                                    </a>
+                                </button>
+                                <button type="button" class="btn btn-success" style="margin:5px">
+                                    <a style="color:white" href="@Url.Action("status_appoitment","lawyers",new{id=bookeduser.Booked_id})">
+                                        status
+                                    </a>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+
+
+                   
+
+                    
+            
+
+                </tbody>
+            </table>
+            <!-- End Dark Table -->
+            @if (@TempData["error"] != null)
+            {
+                <p style="text-align:center;color:red">@TempData["error"]</p>
+            }
+        </div>
+    </div>
+</main>
+
+
+
+
+@* @foreach (var lawyerdata in Model)
+{
+<h3>id : @lawyerdata.lawyer_id</h3>
+<h5>@lawyerdata.lawyer_name</h5>
+} *@
+
+
+

@@ -1,0 +1,18 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+@{
+    Layout = null;
+}
+<h4>login user</h4>
+
+<button>
+    <a href="@Url.Action("logout","home")">log out</a>
+</button>
+
+
+@foreach(var mydata in Model.user_detail)
+{
+    <h5>@mydata.user_name</h5>
+   
+}
+

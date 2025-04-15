@@ -1,0 +1,35 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+<main>
+<div class="card">
+    <div class="card-body">
+            <h5 class="card-title">Admin Profile</h5>
+   
+       
+            <div class="card" style="width: 50%;">
+            
+                <div class="card-body">
+                    @foreach (var admindata in Model.myadmin)
+                    {
+                        
+                    
+                    <h5 >Admin Name:@admindata.admin_name</h5>
+                        <h5 >Admin Email:@admindata.admin_email</h5>
+                     <h5 >Admin password:@admindata.admin_password</h5>
+                    
+                      <a class="btn btn-primary" href="@Url.Action("myadminedit","admin",new{id=admindata.admin_id})">Edited Your profile</a>
+                       
+
+                    }
+                </div>
+            </div>
+
+        </div>
+</div>
+</main>
+
+

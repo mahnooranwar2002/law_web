@@ -1,0 +1,64 @@
+﻿@model laywer_web.Models.lawyerViewModel
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+
+
+
+<main>
+ 
+    <div class="card">
+        <div class="card-body">
+          
+            <h5 class="card-title">Countries Data Table</h5>
+            <button class="btn btn-primary">
+                <a href="@Url.Action("addCountries","admin")" style="color:white;">Add Country</a>
+            </button>
+            <!-- Dark Table -->
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Country  Name</th>
+
+
+                        <th scope="col"> Options</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var countriesName in Model.countriesName)
+                    {
+                        <tr>
+                            @*    <th scope="row"></th> *@
+                            <td>@countriesName.country_id</td>.
+                            <td>@countriesName.country_name</td>
+
+                            <td>
+                                <button class="btn btn-danger">
+                                    <a href="@Url.Action("deletecountry", "admin", new { id = countriesName.country_id })" style="color:white;">
+
+                                        Delete
+
+                                    </a>
+                                </button>
+
+
+                            </td>
+
+
+
+                        </tr>
+                    }
+
+
+
+
+                </tbody>
+            </table>
+            <!-- End Dark Table -->
+          
+        </div>
+    </div>
+</main>
