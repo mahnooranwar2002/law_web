@@ -4,6 +4,7 @@ Lawyer Website
 --------------
 
 ADMIN
+
 The admin can add lawyers.
 The admin can view lawyer details.
 The admin can delete, activate, or deactivate users.
